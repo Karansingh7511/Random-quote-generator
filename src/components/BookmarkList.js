@@ -4,7 +4,7 @@ import Card from './Card';
 
 const BookmarkList = () => {
   const bookmarks=useSelector((store) => store.bookmark?.bookmarquote)
-  
+      
   return (
     <div>
       

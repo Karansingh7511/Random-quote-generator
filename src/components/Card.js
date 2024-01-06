@@ -15,7 +15,7 @@ const Card = ({index, content, author}) => {
     <div className="card-container">
       <h2 className='card-content'>{content}</h2>
        <p className='card-author'>-{author}</p>
-        <button onClick={remove(index)}>Delete</button> 
+        {/* <button onClick={remove(index)}>Delete</button>  */}
     </div>
   </div>
   )
