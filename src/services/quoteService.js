@@ -1,4 +1,3 @@
-// src/services/quoteService.js
 const BASE_URL = 'https://api.quotable.io';
 
 export const fetchQuote = async (endpoint) => {

@@ -1,7 +1,10 @@
+// src/Home.js
 import React, { useState, useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBookmark } from '../redux/bookmarkSlice';
 import Quote from './Quote';
+import '../App.css'; // Import the app.css file
+import BookmarkIcon from "../assets/bi_bookmark-plus-fill.png"
 
 function Home() {
   const [quote, setQuote] = useState(null);
@@ -26,18 +29,28 @@ function Home() {
   }, []); 
 
   return (
-    <div>
-      <div>Quote Generator</div>
-      <div>
-        <div>{quote!=null ? <Quote
-           key={quote._id} 
-           text={quote.content}
-           author={quote.author}
+    <div className=''>
+      <div className='quote-container'>
+        <div>
+          {quote != null ? (
+            <Quote
+              key={quote._id}
+              text={quote.content}
+              author={quote.author}
             />
-        :""}</div>
-        <button onClick={bookmark}>Bookmark</button>
-        <button onClick={fetchData}>Fetch New Quote</button>
+          ) : (
+            ''
+          )}
+          <img
+            src={BookmarkIcon}
+            alt="Bookmark"
+            className="bookmark-icon"
+            onClick={bookmark}
+          />
+        </div>
+        
       </div>
+      <button onClick={fetchData} className='next-button'>Next</button>
     </div>
   );
 }

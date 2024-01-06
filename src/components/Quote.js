@@ -5,8 +5,8 @@ const Quote = ({ text, author }) => {
   return (
     <div>
       <blockquote>
-        <p>{text}</p>
-        <footer>{author}</footer>
+        <p className='quote-content'>{text}</p>
+        <footer className='author'>- {author}</footer>
       </blockquote>
     </div>
   );

@@ -10,12 +10,12 @@ const Card = ({index, content, author}) => {
     }
         
   return (
-    <div className="product-container bg-white p-4 rounded-lg shadow-md transition duration-300 hover:shadow-lg" style={{display:"inline-block"}}>
+    <div >
     {/* Product implementation */}
-    <div className="product-content">
-      <h2 className="text-xl font-bold mb-2">{content}</h2>
-       <p>{author}</p>
-       {/* <button onClick={remove(index)}>Delete</button> */}
+    <div className="card-container">
+      <h2 className='card-content'>{content}</h2>
+       <p className='card-author'>-{author}</p>
+        <button onClick={remove(index)}>Delete</button> 
     </div>
   </div>
   )

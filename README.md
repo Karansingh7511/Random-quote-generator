@@ -1,19 +1,22 @@
-# React & Tailwind CSS Starter Pack
+# React & Quote Generator App
 
-This is a starter pack for creating React projects with Tailwind CSS configured. It uses React version **18.2** and Tailwind CSS version **3.2**.
+This Quote Generator app is designed to display random quotes fetched from a third-party API service. Users can explore new quotes, bookmark their favorite ones, and view them later in the bookmarks section. It uses React version **18.2** and Tailwind CSS version **3.2**.
 
 ## Usage
-
+## Objective
+The primary objective of this project is to create a web application that generates random quotes using a third-party API. The app should have features such as quote generation, bookmarking, and tag-based filtering. Additionally, it should reflect a visually appealing design and be responsive across different devices.
 This starter pack includes a basic setup for using **Tailwind CSS with React**. To start building your own components and styles, follow these steps:
+
+
 
 1. Clone the repository to your local machine.
     ```sh
-    git clone https://github.com/thepranaygupta/react-tailwind-css-starter-pack.git
+    git clone https://github.com/Karansingh7511/Random-quote-generator.git
     ```
 
 1. Install the required packages.
     ```sh
-    cd react-tailwind-css-starter-pack
+    cd Random-quote-generator
     npm install
     ```
 

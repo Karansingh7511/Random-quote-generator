@@ -1,4 +1,3 @@
-// src/services/tagService.js
 const BASE_URL = 'https://api.quotable.io';
 
 export const fetchTags = async () => {
